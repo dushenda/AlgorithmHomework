@@ -62,22 +62,35 @@ function maxi
 maxi = 1;
 for i=1:1:n
 	if(x(i) > x[maxi])	maxi = i;
-end
+end for
 return maxi;
 
 function mini
 mini = 1;
 for i=1:1:n
-	if(x(i) > x[mini])	mini = i;
-end
+	if(x(i) > x[mini])	mini = i;end if
+end for
 return mini;
 //计算最大最小值，计算刻度，计算索引映射数据段数组 seg
 maxx = x[maxi];minx = x[mini];
 l = (maxx - minx)/(n-1);
 for i=1:1:n
-	seg[i] = (x[i] - minx)/l;
-end
+	seg[i] = (int)((x[i] - minx)/l);//int 向下取整，现在计算的是从 0 到 n-2 的整数，共 n-1 段
+end for
 //初始化 low 和 high 数组
 for i=0:1:n-2
+    low[i] = maxx;high[i] = minx;//设置这样的初始值是为了容易被取代，得到真正的值
+end for
+//求解真正的数值
+for i=0:1:n-1
+    if(low[seg[i]] < x[i])	low[seg[i]] = x[i];end if
+    if(high[seg[i] > x[i])	high[seg[i]] = x[i];end if
+end for
+//作差求得最大值
+maxgap = 0;    
+for i=0:1:n-2
+    if((low[i+1] - high[i]) > maxgap)	maxgap = low[i+1] - high[i];end if
+end for   
+printf(maxgap);
 ```
 
