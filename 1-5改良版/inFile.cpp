@@ -1,8 +1,6 @@
 #include "pch.h"
 #include "head.h"
 
-//extern int size;
-//extern double *x;
 
 void MaxGap::inFile()
 {
