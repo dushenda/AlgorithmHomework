@@ -1,0 +1,15 @@
+{
+    
+"background.enabled": true,
+"background.useFront": false,
+"background.customImages": ["https://github.com/dushenda/WallPaper/tree/master/%E5%B9%BB%E7%81%AF%E7%89%871/wallpaper (20).jpg",
+    "https://github.com/dushenda/WallPaper/tree/master/%E5%B9%BB%E7%81%AF%E7%89%871/17.jpg",
+    "https://github.com/dushenda/WallPaper/tree/master/%E5%B9%BB%E7%81%AF%E7%89%871/wallpaper (10).jpg"],
+
+"background.style": {
+    "background-position": "95% 95%",
+    "background-size": "20%",
+    "opacity": 0.8
+        }
+    
+}
