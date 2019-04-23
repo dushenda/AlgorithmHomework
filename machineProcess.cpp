@@ -13,6 +13,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
         sumA=sumA+a[i];
+        
         sumB=sumB+b[i];
     }
     std::cout<<"总长度:"<<n<<std::endl
