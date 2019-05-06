@@ -18,7 +18,7 @@ int main()
     int min=getMin(arr,length);
     int *p=bucketSort(arr,P,length,min,max);
     for (int i = 0; i < length; i++)
-    {
+    { 
         cout<<*(p+i)<<endl;
     }
     
