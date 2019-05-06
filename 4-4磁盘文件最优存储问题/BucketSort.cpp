@@ -1,6 +1,6 @@
 //桶排序算法，最简单的排序算法
 //http://wiki.jikexueyuan.com/project/easy-learn-algorithm/bucket-sort.html
-//复杂度O(n)，即线性扫描序列并且放入桶中再取出，占用的空间复杂度为max{A.length,max{A}-min{A}}
+//复杂度O(m+n)，即线性扫描序列并且放入桶中再取出，占用的空间复杂度为max{A.length,max{A}-min{A}}
 #include<iostream>
 
 using namespace std;
