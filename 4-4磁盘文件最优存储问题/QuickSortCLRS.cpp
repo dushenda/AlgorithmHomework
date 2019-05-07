@@ -25,7 +25,7 @@ void swap(double &x,double &y);
     return 0;
     }
 
-        //选择最右端元素作为锚点进行计算
+    //选择最右端元素作为锚点进行计算
     //i从最左哨兵开始，j从第一个元素开始扫描
     //i记录最后一个小于锚点的数的位置，最后交换A[i+1]和锚点(A[end])
     void quicksort(int left,int right)
@@ -35,7 +35,7 @@ void swap(double &x,double &y);
     temp=a[right];  //锚点
     for (j=left ; j < right; j++)  //扫描交换
     {
-        if (a[j]<=temp)
+        if (a[j]>=temp)
         {
             swap(a[++i],a[j]);
         }

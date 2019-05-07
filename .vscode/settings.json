@@ -9,6 +9,10 @@
     "background-position": "95% 95%",
     "background-size": "20%",
     "opacity": 0.8
+        },
+        "files.associations": {
+            "*.m": "matlab",
+            "iostream": "cpp"
         }
     
 }
