@@ -66,11 +66,12 @@ int Arrangement(int **B, int n, int m, int bestx[])
         X.total[i] = 0;
         X.now[i] = 0;
     }
-    for (int i = 1; i <= n;i++)
+    for (int i = 1; i <= n;i++){
         X.x[i] = i;
         for (int j = 1; j <= m;j++){
             X.total[j] += B[i][j];
         }
+    }
         X.Backtrack(1,0);
         delete[] X.x;
         delete[] X.total;
